@@ -204,6 +204,94 @@ body {
             list-style: circle;
         }
 
+        .roadmap{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-roadmap{
+            height: 90%;
+            width: 90%;
+            /* background-color: green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inner-roadmap>h3{
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+
+
+        .road-card{
+            margin-top: 100px;
+            height: 80%;
+            width: 90%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+.main-road{
+    width: 25%;
+    height: 80%;
+    /* background-color: purple; */
+    /* border: 2px solid red; */
+    opacity: .2;
+}
+
+.main-road h3{
+    color: white;
+    font-size: 35px;
+}
+
+.main-road ul{
+    height: 80%;
+    width: 90%;
+    background-color: red;
+}
+.main-road:nth-child(1){
+    border-top: 5px dashed white;
+    border-right: 5px dashed white;
+}
+
+.main-road:nth-child(2){
+    border-bottom: 5px dashed white;
+    border-right: 5px dashed white;
+}
+
+.main-road:nth-child(3){
+
+    border-top: 5px dashed white;
+    border-right: 5px dashed white;
+
+}
+
+.main-road:nth-child(4){
+    border-bottom: 5px dashed white;
+}
+
+#logo{
+    height: 50vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
         @media screen and (max-width: 960px) {
 
             #about-sec{
@@ -219,5 +307,9 @@ body {
             .main-about{
                 width: 80%;
                 padding-bottom: 30px;
+            }
+
+            #logo image{
+                width: 60%;
             }
         }
