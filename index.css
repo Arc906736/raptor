@@ -1,0 +1,223 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+    background-color: black;
+    }
+    a {
+    text-decoration: inherit;
+    color: inherit;
+    }
+    .footer-link-list-link {
+    color: inherit !important;
+    }
+    .footer-link-list-link:hover {
+    opacity: 0.5;
+    }
+    .bg-primary-1 .footer a{
+    color:#fff;
+    }
+
+
+    .bg-primary-1 .footer-link-list-link:hover {
+    color: #e9f06f;}
+    .blur {    
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+    }
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .blur {
+    background-color: rgba(255, 255, 255, 1);
+    }
+    }
+    .anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+    }
+    .caret svg { /* dropdown caret fill hover transition*/
+    transition: fill .2s cubic-bezier(.4,0,.2,1);
+    }
+    .dropdown-toggle.w--open .caret svg { /* change caret svg color when dropdown open */
+    fill: #796eff !important;
+    }
+    .dropdown-toggle:hover .caret svg { /* change caret svg color on hover */
+    fill: #796eff !important;
+    }
+    .dropdown-overflow { 
+    max-height: calc(100vh - 180px); /* mega menu max height when viewport is vertically short. 56px is the height of the navbar*/
+    overflow-x: hidden; /* we want mega menus to be able to scroll vertically when needed but prevent any horizontal scroll*/
+    }
+    .w-embed:before, .w-embed:after { 
+    display: inherit;
+    }
+    @media screen and (max-width: 991px) {
+    .dropdown-overflow { /* Remove the height behaviour from Desktop in Tablet*/
+    max-height: none;
+    }
+    .menu { /* In tablet, we want the whole menu to verticall scroll instead of each separate dropdown. */
+    height: calc(100vh - 54px);
+    overflow-x: hidden;
+    }
+    .blog-card { 
+    vertical-align: top;
+    }
+    }
+
+
+    .splide__container{
+        position:relative;
+        box-sizing:border-box
+        }
+        .splide__list{
+        margin:0!important;
+        padding:0!important;
+        width:-webkit-max-content;
+        width:max-content;
+        will-change:transform
+        }
+        .splide__pagination li{
+        list-style-type:none;
+        display:inline-block;
+        line-height:1;
+        margin:0
+        }
+        .splide,.splide__slide{
+        position:relative;
+        outline:none
+        }
+        .splide__slide{
+        box-sizing:border-box;
+        list-style-type:none!important;
+        margin:0;
+        flex-shrink:0
+        }
+        .splide__slider{
+        position:relative
+        }
+        .splide__track{
+        position:relative;
+        z-index:0;
+        }
+        .splide--draggable>.splide__track>.splide__list>.splide__slide{
+        -webkit-user-select:none;
+        user-select:none
+        }
+        /* Disabled Arrow Button */
+        .splide button:disabled {
+        opacity: 0.4;
+        }
+        /* Dark Sections */
+        .is--dark .splide__arrow {
+        filter: invert(100%);
+        }
+        .is--dark .splide__pagination__page {
+        background-color: #dfdad5;
+        }
+        /* Pill slider */
+        .splide.pill .splide__pagination {
+        display: none;
+        }
+        .splide__slide.is-active .slider-pill_photo {
+        transform: scale(1.2);
+        }
+        /* Square slider */
+        .splide__slide.is-active .slider-square_img {
+        transform: scale(1.05);
+        }
+        .splide__slide.is-active .slider-square_photo {
+        transform: scale(1.0);
+        }
+        .splide__slide.is-active .text-opacity {
+        opacity: 1.0;
+        }
+        /* Tall slider */
+        .splide.tall .splide__pagination {
+        display: none;
+        }
+        .splide__slide.is-active .text-opacity {
+        opacity: 1.0;
+        }
+        .splide__slide.is-active .slider-tall_img {
+        transform: scale(1.0);
+        }
+        .splide__slide.is-active .slider-tall_photo {
+        transform: scale(1.0);
+        }
+        .splide__slide.is-active .rounded {
+        border-radius: 0em;
+        }
+
+        #about-sec{
+            height: 70vh;
+            width: 100%;
+            background-color: black;
+            margin-top: 30px;
+            display: flex;justify-content: center;
+            align-items: center;
+        }
+
+        .inner-about{
+            height: 90%;
+            width: 90%;
+            /* background-color: green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inner-about > h3{
+            font-size: 4em;
+            color: white;
+        }
+
+        .min-about{
+            height: 70%;
+            width: 90%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+    
+        .main-about{
+            width: 20%;
+            height: 80%;
+            /* background-color: green; */
+            border-radius: 20px;
+        }
+
+        .main-about h3{
+            padding-left: 10px;
+        }
+        .main-about>ul{
+            width: 100%;
+            height: 30%;
+            /* background-color: red; */
+
+        }
+
+        .main-about li{
+            font-size: 20px;
+            list-style: circle;
+        }
+
+        @media screen and (max-width: 960px) {
+
+            #about-sec{
+                height: auto;
+                padding-bottom: 30px;
+            }
+            .inner-about h3{
+                font-size: 30px;
+            }
+            .min-about{flex-direction: column;
+            height: auto;}
+
+            .main-about{
+                width: 80%;
+                padding-bottom: 30px;
+            }
+        }
